@@ -1,0 +1,130 @@
+:root{
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.main{
+    
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    box-shadow: var(--light-shadow);
+}
+.link-container{
+    margin-top: 10px;
+  }
+li{
+    
+    display: list-item;
+    text-transform: capitalize;
+}
+a{text-decoration: none;}
+
+ul{
+    color: aliceblue;
+    list-style-type: none;
+}
+.link-container{
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+    transition: var(--transition);
+}
+.links{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 510px) {
+
+    .main{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: end;
+        border-width: 0;
+        font-size: 2vw;   
+        overflow: hidden;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .link-container{
+        height: auto !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        float: inline-end;
+        display: flex;
+        color: white;
+        margin: 10px;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        display: flex;
+
+    }
+    .links a{
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .links a:hover {
+        text-decoration: none;
+        color: #ff5823;
+    }
+        
+      
+}
+
+@media screen and (max-width: 510px) {
+    .nav-toggle {
+        margin-left: 85%;
+        font-size: 1.5rem;
+        color: #ff5823;
+        background: transparent;
+        border-color: transparent;
+        transition: var(--transition);
+        cursor: pointer;
+        border: none;
+        margin-right: 10px;
+
+      }
+      .nav-toggle:hover{
+          transform: rotate(90deg);
+          
+      }
+
+      .main{
+          margin-top: 10px;
+          border-bottom: #1d2125;
+          border-style: solid;
+          border-top: none;
+          border-right: none;
+          border-left: nonoe;
+      
+      }
+    
+      .links a{
+        
+        color: white;
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: var(--transition);
+        cursor: pointer;
+    
+    }
+    .links a:hover {
+        text-decoration: none;
+        background-color: rgb(9, 3, 46);
+        color: #ff5823;
+        padding-left: 1.5rem;
+    }
+        
+      
+
+}
+

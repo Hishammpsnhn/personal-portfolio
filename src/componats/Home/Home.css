@@ -1,0 +1,46 @@
+.portfolio-container{
+    overflow: hidden;
+}
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    min-height: 670px;
+    background-image: url("../../Assets/Home/bg.jpg");
+    
+
+}
+.about-me-container {
+    opacity: 5;
+    transform: translateY(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0;
+    
+
+}
+.resume-container {
+   
+    opacity: 5;
+    transform: translateY(1px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin: 60px 0;
+    
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+    opacity: 5;
+    transform: translateY(1px);
+}

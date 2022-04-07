@@ -1,0 +1,187 @@
+
+.about-me-parent{
+    max-width: 1000px;
+    width: 70%;
+}
+.about-heading-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px;
+}
+.screen-heading{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sub-heading{
+    letter-spacing: 5px;
+    margin: 10px 0 0 0;
+}
+
+.heading-seperator{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    margin: 12px 0 0;
+}
+.seperator-line {
+    width: 100%;
+    height: 2px;
+    background-color: #1f221f;
+
+}
+.seperator-blob {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.seperator-blob div {
+    width: 35px;
+    border-radius: 10px;
+    background-color: var(--dark-orange);
+}
+.about-me-card{
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 20px -2px #1f2235;
+}
+.about-me-profile{
+    width: 50%;
+    height: 500px;
+    background-image: url("../../../Assets/Home/profilephoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.about-me-detaile{
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+}
+.about-me-description{
+    font-size: 12px;
+}
+.about-me-highlight{
+    margin: 80px 0 ;
+}
+.hightlight{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    margin: 5px 0  ;
+}
+.highlight-blob{
+    margin: 0 10px ;
+    display: flex;
+    height: 12px;
+    width: 12px;
+    background-color: var(--dark-orange);
+    border-radius: 50%;
+}
+.about-me-options .highlighted-btn {
+    margin: 0 0 0 30px ;
+}
+@media screen and (max-width:1221px) {
+    .about-me-options  {
+        display: flex;
+    }
+    .highlighted-btn{
+        width: 120px;
+    }
+    .primary-btn{
+        width: 120px;
+    }
+}
+@media screen and (max-width:1110px){
+    .about-me-options  {
+        display: flex;
+    }
+    .highlighted-btn{
+        width: 100px;
+    }
+    .primary-btn{
+        width: 100px;
+    }
+    .about-me-highlight{
+        margin: 60px 0 ;
+    }
+}
+@media  screen and (max-width:910px ) {
+    .about-me-profile{
+        width: 0%;
+    }
+    .about-me-detaile{
+        width: 100%;
+        text-align: justify;
+        padding: 30px;
+    }
+    .highlighted-btn{
+        width: 120px;
+    }
+    .primary-btn{
+        width: 120px;
+    }
+    
+ }
+
+ @media screen and (max-width:470px){
+    .highlighted-btn{
+        width: 22vw;
+    }   
+    .primary-btn{
+        width: 22vw;
+    } 
+ }
+
+
+@media screen and (max-width:390px) {
+    .hightlight{
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        margin: 5px 0  ;
+    }
+    .about-me-highlight{
+        margin:50px 0;
+    }
+}
+
+@media screen and (max-width:340px){
+    .screen-heading{
+        font-size: 40px;
+    }
+    .sub-heading{
+        letter-spacing: 4px;
+        margin: 5px 0 0 0;
+    }
+    
+    .heading-seperator{
+        width: 200px;
+        margin: 10px 0 0;
+    }
+    .highlighted-btn{
+        width: 22vw;
+        border-radius: 30%;
+    }   
+    .primary-btn{
+        border-radius: 30%;
+        width: 22vw;
+    }     
+}
+
+
+
+
+
+
+
+
+
+
+
+
