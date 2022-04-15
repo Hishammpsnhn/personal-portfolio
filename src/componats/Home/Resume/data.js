@@ -3,7 +3,7 @@ const sublinks = [
         id: 1,
         title: 'Education',
         head: [
-            { head1: "MES  mannarkad", subhead1: 'BACHLORS OF COMPUTER SCIECE', date: [{ date1: "2021-present" }] },
+            { head1: "MES  mannarkad", subhead1: 'BACHLORS OF COMPUTER SCIECE', date: [{ date1: "2021-2024" }] },
             { head1: "GVHSS MKBA", subhead1: 'BIOLOGY SCIENCE', date: [{ date1: "2019-2021" }] },
             { head1: "GVHSS MKBA", subhead1: 'STATE', date: [{ date1: "2015-2019" }] },
 
@@ -16,7 +16,7 @@ const sublinks = [
         id: 2,
         title: 'work History',
         head: [
-            { head1: "student at mes kc", subhead1: 'still ongoing bachlors degree', date: [{ date1: "2021-present" }], },
+            { head1: "student at mes kc", subhead1: 'still ongoing bachlors degree', date: [{ date1: "2021-2024" }], },
         ]
     },
     {

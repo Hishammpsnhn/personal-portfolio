@@ -272,7 +272,7 @@ article.activeSlide {
         min-width: 50vw;
     }
     .resume-bullet-details{
-        width: 80vw;
+        width: 87vw;
         overflow: hidden;
     }
     .skill-container{
@@ -292,6 +292,7 @@ article.activeSlide {
     
     .bullet-details h3{
         font-size: 22px;
+        margin: 0 0 0 10px ;
     }
     .active-bullet{
         width: 75vw;
@@ -310,7 +311,7 @@ article.activeSlide {
 }
 @media only screen and (max-width: 375px){
     .bullet-details p{
-        min-width: 85px;
+        min-width: 100px;
     }
  
 }
