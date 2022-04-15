@@ -34,8 +34,8 @@ const sublinks = [
         id: 4,
         title: 'projects',
         head: [
-            { head1: "personal website", subhead1: 'git link soon...', date: [{ date1: "2022" }], },
-            { head1: "Tesla clone", subhead1: 'git link soon...', date: [{ date1: "2022" }], },
+            { head1: "personal website", subhead1:<a href="https://github.com/Hishammpsnhn/personal-portfolio" >Git source code click here..</a>, date: [{ date1: "2022" }], },
+            { head1: "Tesla clone", subhead1:<a href="https://tesla-clone-hisham.netlify.app/" >click here..</a>, date: [{ date1: "2022" }], },
         ]
     },
     {
