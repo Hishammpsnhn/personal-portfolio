@@ -1,25 +1,45 @@
 
-import React,{useRef} from 'react'
+import React,{useRef,useState} from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import socialmedia from '../../Assets/fonts/social-media.jpg'
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
 
 const Contact = () => {
-    const form = useRef();
-  
+  const [name,setName] = useState('')
+  const [email,setEmail] = useState('')
+  const [msg,setMsg] = useState('')
+
+  console.log(name)
+  console.log(email)
+  console.log(msg)
+ 
+  const form = useRef();
+    
+    
     const sendEmail = (e) => {
       e.preventDefault();
-  
-      emailjs.sendForm('service_mq6aj6q', 'template_x8lhd6d', form.current, 'C2XDHRb4SmIh4nvOx')
-        .then((result) => {
-            console.log("succes"+result.text);
-            alert("Your Mail is succesfully Send")
-        }, (error) => {
-            console.log("error"+error.text);
-            alert("Something Went Wrong")
-        });
-        e.target.reset()
-    };
+    
+      if(!name || !email || !msg){
+        alert('plese fill all the fields')
+    
+    }else{
+        toast("Your Mail Is Sended")
+        emailjs.sendForm('service_mq6aj6q', 'template_x8lhd6d', form.current, 'C2XDHRb4SmIh4nvOx')
+          .then((result) => {
+setEmail('')
+setName('')
+setMsg('')
+            }, (error) => {
+              console.log("error"+error.text);
+              alert("Something Went Wrong")
+          });
+          e.target.reset()
+      };
+      }
+
   return (
     <div className="contact-content">
       <div className="heading-container">
@@ -79,17 +99,17 @@ const Contact = () => {
 
             <label >Name</label>
             <input className='name-box' type="text" name="sender_name"
-                 placeholder='your name' />
+                 placeholder='your name' value={name} onChange={(e)=>setName(e.target.value)} />
 
             <label className='name'>Email</label>
             <input className='name-box' type="email"  name="sender_email"
-               placeholder='your email' />
+               placeholder='your email'  value={email} onChange={(e)=>setEmail(e.target.value)}  />
 
             <label className='name'>Message</label>
             <textarea className='message' name="message" rows='4'
-                placeholder='your message' />
+                placeholder='your message'  value={msg}  onChange={(e)=>setMsg(e.target.value)} />
 
-            <button className='btn primary-btn' type='submit'>Send</button>
+            <button className='btn primary-btn'  type='submit'>Send</button>
           </form>
         </div>
       </div>

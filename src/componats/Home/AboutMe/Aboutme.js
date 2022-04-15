@@ -23,7 +23,7 @@ export default function Aboutme() {
                 <div className="about-me-profile">
                 </div>
                 <div className="about-me-detaile">
-                    <span className='about-me-description'>Full stack web  developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.</span>
+                    <span className='about-me-description'>Learnig to become Full stack web  developer with background knowledge of MERN stacks with redux, along with a knack of building applications with altmost efficiency. Now learnig react and redux </span>
                     <div className="about-me-highlight">
                         <div className="highlight-heading">
                         <span>Here are a few Highlight :</span>
@@ -31,27 +31,27 @@ export default function Aboutme() {
                         <div className="hightlight">
                             <div className="highlight-blob">
                                 </div>
-                                <span>Full Stack web development</span>
+                                <span>MERN Stack Developer</span>
                         </div>
                         <div className="hightlight">
                             <div className="highlight-blob">
                             </div>
-                                <span>Full Stack web development</span>
+                                <span>Currently Learning Redux</span>
                         </div>
                         <div className="hightlight">
                             <div className="highlight-blob">
                             </div>
-                                <span>Full Stack web development</span>
+                                <span>Now FrontEnd Developer</span>
                         </div>
                         <div className="hightlight">
                             <div className="highlight-blob">
                             </div>
-                                <span>Full Stack web development</span>
+                                <span>Self Taught Developer </span>
                         </div>
                         <div className="hightlight">
                             <div className="highlight-blob">
                             </div>
-                                <span>Full Stack web development</span>
+                                <span>Enthusiastic Developer</span>
                         </div>
                     </div>
                     <div className='about-me-options'>
